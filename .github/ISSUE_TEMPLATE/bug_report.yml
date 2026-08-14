@@ -1,0 +1,45 @@
+name: Bug report
+description: Report a reproducible problem in the Lite edition
+title: "[Bug]: "
+labels: [bug, needs-triage]
+body:
+  - type: markdown
+    attributes:
+      value: "Do not include Stripe keys, webhook secrets, customer data, or full payment payloads."
+  - type: input
+    id: version
+    attributes:
+      label: Lite version
+    validations:
+      required: true
+  - type: input
+    id: environment
+    attributes:
+      label: WordPress, PHP, and WP Job Manager versions
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Reproduction steps
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behavior
+    validations:
+      required: true
+  - type: textarea
+    id: actual
+    attributes:
+      label: Actual behavior
+    validations:
+      required: true
+  - type: checkboxes
+    id: safety
+    attributes:
+      label: Data safety
+      options:
+        - label: I removed credentials and personal/payment data.
+          required: true

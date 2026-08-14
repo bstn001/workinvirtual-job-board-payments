@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Setup documentation
+    url: https://workinvirtual.com/docs/stripe-job-board-payments/
+    about: Read the installation and Stripe Test-mode setup guide.
+  - name: Private security report
+    url: mailto:support@workinvirtual.com
+    about: Never report vulnerabilities or credentials in a public issue.
